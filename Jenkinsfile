@@ -3,7 +3,7 @@ pipeline{
     stages{
         stage("build"){
             when{
-                tag "1.0"
+                buildingTag "1.0"
             }
             steps{
                 echo "Building the master branch"
