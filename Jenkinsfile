@@ -3,7 +3,7 @@ pipeline{
     stages{
         stage("build"){
             when{
-                changelog "Update dummy"
+                changelog "Update Jenkinsfile"
             }
             steps{
                 echo "Building the master branch "
