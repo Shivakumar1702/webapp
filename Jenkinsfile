@@ -1,22 +1,12 @@
 pipeline{
     agent any
     stages{
-        
-        stage('build master'){
+        stage("build"){
             when{
-                branch 'master'
+                tag "v1.0"
             }
             steps{
-                echo 'building the master branch'
-            }
-        }
-        
-        stage('build test'){
-            when{
-                branch 'test'
-            }
-            steps{
-                echo 'building the test branch'
+                echo "Building the master branch"
             }
         }
     }
