@@ -3,7 +3,7 @@ pipeline{
     stages{
         stage("build"){
             when{
-                buildingTag "1.0"
+                changelog "Create dummy"
             }
             steps{
                 echo "Building the master branch"
