@@ -6,7 +6,7 @@ pipeline{
                 changelog "Update dummy"
             }
             steps{
-                echo "Building the master branch"
+                echo "Building the master branch "
             }
         }
     }
