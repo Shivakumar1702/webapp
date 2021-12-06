@@ -1,6 +1,6 @@
 node{
     stage('build'){
         def something = currentBuild.changeSets
-        echo something
+        println something
     }    
 }
