@@ -1,5 +1,6 @@
 node{
     stage('build'){
-        echo currentBuild.changeSets
+        def something = currentBuild.changeSets
+        echo something
     }    
 }
